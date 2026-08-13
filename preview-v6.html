@@ -21,13 +21,13 @@
     /* The approved 3:4 printed-card composition */
     .card{position:absolute;z-index:4;top:55%;left:50%;width:min(88vw,430px);aspect-ratio:3/4;opacity:0;transform:translate(-50%,-35%) scale(.76) rotate(-1deg);transform-origin:center;filter:drop-shadow(0 20px 19px rgba(24,20,17,.36));transition:top 1.75s cubic-bezier(.16,.77,.16,1) 1.08s,transform 1.75s cubic-bezier(.16,.77,.16,1) 1.08s,opacity .52s ease .84s}
     .opened .card{top:50%;opacity:1;transform:translate(-50%,-50%) scale(1) rotate(-.18deg)}
-    .lace{position:absolute;z-index:1;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}
-    .paper{position:absolute;z-index:2;inset:5.25% 6.25% 5.75%;overflow:hidden;border:1px solid rgba(82,67,48,.09);background:linear-gradient(145deg,rgba(255,253,247,.995),rgba(250,246,237,.995)),repeating-linear-gradient(18deg,transparent 0 8px,rgba(68,55,43,.025) 8px 9px);box-shadow:inset 0 0 32px rgba(124,91,48,.045)}
+    .lace{position:absolute;z-index:1;top:-2%;left:-5.5%;width:111%;height:104%;object-fit:fill;pointer-events:none}
+    .paper{position:absolute;z-index:2;inset:8.8% 10.8% 9%;overflow:hidden;border:1px solid rgba(82,67,48,.09);background:linear-gradient(145deg,rgba(255,253,247,.995),rgba(250,246,237,.995)),repeating-linear-gradient(18deg,transparent 0 8px,rgba(68,55,43,.025) 8px 9px);box-shadow:inset 0 0 32px rgba(124,91,48,.045)}
     .paper::after{position:absolute;inset:8px;border:1px solid rgba(108,86,57,.05);content:"";pointer-events:none}
     .calla{position:absolute;z-index:2;bottom:5.5%;left:-1.5%;width:35%;height:auto;opacity:.88;filter:saturate(.78) contrast(1.09);mix-blend-mode:multiply;pointer-events:none}
-    .content{position:relative;z-index:3;display:flex;height:100%;flex-direction:column;align-items:center;padding:7.5% 8% 4.8%;text-align:center}
+    .content{position:relative;z-index:3;display:flex;height:100%;flex-direction:column;align-items:center;padding:6.5% 7% 4.5%;text-align:center}
     .save{margin:0 0 1%;font-family:"Cormorant Garamond",serif;font-size:clamp(10px,2.8vw,13px);font-style:italic;letter-spacing:.08em;direction:ltr}
-    .names{display:flex;min-height:18%;align-items:center;justify-content:center;margin:0;font-family:"Noto Nastaliq Urdu",serif;font-size:clamp(36px,10.5vw,49px);font-weight:400;line-height:1.2;white-space:nowrap}
+    .names{display:flex;min-height:17%;align-items:center;justify-content:center;margin:0;font-family:"Noto Nastaliq Urdu",serif;font-size:clamp(34px,10vw,47px);font-weight:400;line-height:1.2;white-space:nowrap}
     .names i{margin:0 .42em;font-size:.41em;font-style:normal;font-weight:400;transform:translateY(2px)}
     .invitation{max-width:88%;margin:1% 0 0;font-family:"Noto Naskh Arabic",serif;font-size:clamp(12px,3.25vw,15px);font-weight:400;line-height:1.75}
     .occasion{margin:1.8% 0 0;color:#96733a;font-size:clamp(8px,2.25vw,10px);font-weight:300}
@@ -37,7 +37,7 @@
     .heart{margin:1% 0 0;font-size:8px}
     .address-wrap{display:flex;flex-direction:column;align-items:center;margin-top:auto}
     .label{margin:0 0 .8%;color:#96733a;font-size:clamp(8px,2.15vw,9px);font-weight:300}
-    .address{max-width:88%;margin:0;font-family:"Noto Naskh Arabic",serif;font-size:clamp(9.5px,2.7vw,12px);font-weight:400;line-height:1.72}
+    .address{max-width:94%;margin:0;font-family:"Noto Naskh Arabic",serif;font-size:clamp(9px,2.55vw,11.5px);font-weight:400;line-height:1.7}
     .map{margin-top:1.8%;border-bottom:1px solid rgba(112,83,40,.38);color:#574127;font-size:clamp(7px,1.95vw,8.5px);text-decoration:none}
 
     /* Layered, slow envelope opening */
