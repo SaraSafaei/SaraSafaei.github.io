@@ -51,8 +51,8 @@
     .opened .seal{opacity:0;transform:translate(-50%,-50%) scale(.62) rotate(15deg)}
     .opened .seam,.opened .hint{opacity:0;animation:none}
 
-    .music{position:fixed;z-index:30;top:max(14px,env(safe-area-inset-top));left:14px;display:flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid rgba(176,138,69,.45);border-radius:999px;background:rgba(255,252,245,.91);color:#3d3234;cursor:pointer;font-size:9px;opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity .55s ease 2.25s,transform .55s ease 2.25s;backdrop-filter:blur(10px)}
-    .opened .music{opacity:1;pointer-events:auto;transform:none}.music i{color:var(--wine);font-size:14px;font-style:normal;animation:pulse 1.6s ease-in-out infinite}.music.off i{animation:none;opacity:.5}
+    .music{position:fixed;z-index:30;top:max(14px,env(safe-area-inset-top));left:14px;display:flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid rgba(176,138,69,.45);border-radius:999px;background:rgba(255,252,245,.91);color:#000;cursor:pointer;font-size:9px;opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity .55s ease 2.25s,transform .55s ease 2.25s;backdrop-filter:blur(10px)}
+    .opened .music{opacity:1;pointer-events:auto;transform:none}.music i{color:#000;font-size:14px;font-style:normal;animation:pulse 1.6s ease-in-out infinite}.music.off i{animation:none;opacity:.5}
     @keyframes hint{0%,100%{opacity:.72;transform:translateX(50%) translateY(0)}50%{opacity:1;transform:translateX(50%) translateY(-3px)}}
     @keyframes pulse{0%,100%{transform:scale(.92) rotate(-4deg)}50%{transform:scale(1.09) rotate(4deg)}}
     @media(max-width:520px){.scene{width:100vw}.panel-left .front,.panel-left .back,.panel-right .front,.panel-right .back{border-radius:0}.seal{width:53px;height:68px}.hint{font-size:10px}}
