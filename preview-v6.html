@@ -15,7 +15,7 @@
     body{overflow:hidden;background:#34392c;font-family:"Vazirmatn",Tahoma,sans-serif}
     button{font:inherit;-webkit-tap-highlight-color:transparent}
     .stage{position:relative;display:grid;min-height:100svh;place-items:center;overflow:hidden;isolation:isolate}
-    .stage::before{position:absolute;z-index:-2;inset:-35px;background:url("assets/approved-invitation-card-v2.webp") center/cover no-repeat;content:"";filter:blur(18px) saturate(.82);transform:scale(1.08)}
+    .stage::before{position:absolute;z-index:-2;inset:-35px;background:url("assets/approved-invitation-card-v3-base.webp") center/cover no-repeat;content:"";filter:blur(18px) saturate(.82);transform:scale(1.08)}
     .stage::after{position:absolute;z-index:-1;inset:0;background:rgba(24,27,20,.24);content:""}
     .scene{position:relative;width:min(100vw,72vh,720px);aspect-ratio:3/4;max-height:96svh;perspective:1900px;filter:drop-shadow(0 24px 24px rgba(19,16,14,.4))}
 
@@ -23,7 +23,11 @@
     .poster{position:absolute;z-index:1;inset:0;overflow:hidden;background:#566046;transform:scale(.965);transition:transform 1.8s cubic-bezier(.2,.72,.18,1) .48s,filter 1.2s ease .48s;filter:brightness(.78) saturate(.82)}
     .opened .poster{transform:scale(1);filter:brightness(1) saturate(1)}
     .poster img{display:block;width:100%;height:100%;object-fit:cover}
-    .blessing{position:absolute;z-index:2;top:17.2%;left:50%;color:#000000;font-family:"Noto Nastaliq Urdu",serif;font-size:clamp(13px,3.25vw,23px);font-weight:400;line-height:1.8;white-space:nowrap;transform:translateX(-50%);text-shadow:0 .4px rgba(0,0,0,.12)}
+    .blessing{position:absolute;z-index:2;top:17.2%;left:50%;color:#000;font-family:"Noto Nastaliq Urdu",serif;font-size:clamp(13px,3.25vw,23px);font-weight:400;line-height:1.8;white-space:nowrap;transform:translateX(-50%);text-shadow:0 .4px rgba(0,0,0,.12)}
+    .refreshment{position:absolute;z-index:3;top:52.5%;left:50%;display:grid;width:54%;height:5.2%;place-items:center;color:#000;font-family:"Noto Nastaliq Urdu",serif;font-size:clamp(13px,3.15vw,22px);font-weight:400;line-height:1.8;white-space:nowrap;transform:translateX(-50%)}
+    .map-link{position:absolute;z-index:4;top:84.4%;left:50%;display:inline-flex;align-items:center;gap:5px;padding:0 7px;border-bottom:1px solid rgba(137,99,37,.56);background:rgba(248,244,235,.75);color:#6f4d1c;font-family:"Noto Nastaliq Urdu",serif;font-size:clamp(11px,2.35vw,16px);font-weight:600;line-height:1.7;text-decoration:none;white-space:nowrap;transform:translateX(-50%)}
+    .map-link::before{content:"⌖";font-family:serif;font-size:.9em}
+    .map-link:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
     /* A central gatefold: two padded envelope halves open away from the seam. */
     .gate{position:absolute;z-index:10;inset:0;border:0;padding:0;background:transparent;cursor:pointer;outline:0;transform-style:preserve-3d;transition:visibility 0s linear 2.45s}
@@ -64,8 +68,10 @@
     <button class="music" id="music" type="button" aria-label="قطع موسیقی"><i>♫</i><span>موسیقی در حال پخش</span></button>
     <div class="scene">
       <article class="poster" aria-label="کارت دعوت سارا و حسین">
-        <img src="assets/approved-invitation-card-v2.webp" alt="دعوت‌نامه بله‌برون سارا و حسین">
+        <img src="assets/approved-invitation-card-v3-base.webp" alt="دعوت‌نامه بله‌برون سارا و حسین">
         <div class="blessing">به نام پیوند دهنده قلب ها</div>
+        <div class="refreshment">مراسم بله‌برون به صرف چای و شیرینی</div>
+        <a class="map-link" href="https://maps.app.goo.gl/2GfuraERzrhzuwR98" target="_blank" rel="noopener noreferrer" aria-label="مسیریابی محل مراسم با نقشه">مسیریابی با نقشه</a>
       </article>
 
       <button class="gate" id="gate" type="button" aria-label="باز کردن دعوت‌نامه سارا و حسین">
